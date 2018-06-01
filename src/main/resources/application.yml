@@ -1,0 +1,18 @@
+
+
+server: 
+  port: 8088
+  servlet:
+    context-path: /demo
+spring: 
+  redis:
+    host: 127.0.0.1
+    #databasename:0
+    port: 6379
+    password: redis123456
+    pool:
+      max-active: 8
+      max-wait: 1
+      max-idle: 8
+      min-idle: 0
+    timeout: 10000
